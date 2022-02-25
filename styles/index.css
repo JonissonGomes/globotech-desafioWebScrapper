@@ -15,6 +15,7 @@ main {
     margin-bottom: 4%;
     font-size: 32pt;
     font-weight: 700;
+    text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -41,7 +42,8 @@ main {
 .title_subtitle {
     text-align: left;
     margin-left: 10%;
-    color: #c4170c;    ;
+    color: #c4170c;    
+    text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
 }
