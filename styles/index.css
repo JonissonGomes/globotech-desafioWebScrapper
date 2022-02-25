@@ -32,7 +32,8 @@ main {
 .figure {
     width: 14vw;
     margin-left: 4%;
-}
+    object-fit: contain;
+}/* esse é o truque pra imagem caber sem ficar distorcida */
 
 .display{
     display: flex;
