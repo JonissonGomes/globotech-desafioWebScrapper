@@ -11,8 +11,8 @@ fetch('../body.json')
         <section class="display">
         <img src="${item.image}" class="figure" />
         <section class="title_subtitle ">
-            <h2>${item.title}</h2>
-            <h4 class="subtitle">${item.subtitle}</h4>            
+            <h2><a href="${item.link}" class="subtitle">${item.title}</a></h2>
+            <h4><a href="${item.link}" class="subtitle">${item.subtitle}</a></h4>            
         </section>
       </section>`)
       } else if(item.subtitle === ""){
@@ -20,8 +20,8 @@ fetch('../body.json')
         <section class="display">
         <img src="${item.image}" class="figure"/>
         <section class="title_subtitle">
-            <h2>${item.title}</h2>
-            <h4><a href="${item.relationship.link}" class="subtitle">${item.relationship.titulo}</a></h4>            
+            <h2><a href="${item.link}" class="subtitle">${item.title}</a></h2>
+            <h4><a href="${item.relationship.link}" class="subtitle"> • ${item.relationship.titulo}</a></h4>            
         </section>
       </section>`)
       }
