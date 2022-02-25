@@ -22,6 +22,8 @@ const SUBTITULO = ".feed-post-header-chapeu";
 // seletor para buscar o link para a matéria
 const LINK = ".feed-post-link";
 
+const RELACIONADA = ".bstn-relatedtext"
+
   const dados = await axios.get(url).then((res) => {
         let $ = cheerio.load(res.data);
         let body = [];
@@ -33,6 +35,10 @@ const LINK = ".feed-post-link";
                 title: $(elem).find(TITULO).text(),
                 subtitle: $(elem).find(SUBTITULO).text(),
                 link: $(elem).find(LINK).attr('href'),
+                relationship: {
+                  titulo: $(elem).find(RELACIONADA).text(),
+                  link: $(elem).find(RELACIONADA).attr('href')
+                }
             }) 
         })
 
