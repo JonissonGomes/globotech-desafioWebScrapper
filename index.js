@@ -4,8 +4,8 @@ const cheerio = require("cheerio");
 const fs = require('fs');
 
 async function run() {
-  // Criar uma variável para armazenar o link da globo
-  const url = "https://g1.globo.com/";
+// Criar uma variável para armazenar o link da globo
+const url = "https://g1.globo.com/";
   
 // Seletor Main
 const MAINSELETOR = '.feed-post-body'  
